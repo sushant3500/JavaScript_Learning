@@ -48,10 +48,10 @@ console.log("Index of Character(S):-",char);
 var index = sentence.indexOf("lang");
 console.log("Index of String(lang):-", index);
 
-var character = sentence.charAt(35);
+var character = sentence.charAt(count-1);
 console.log("Last Character:-", character);
 
-var sushant = sentence.charAt(33);
+var sushant = sentence.charAt(count-3);
 console.log("Last 3rd Character:-", sushant);
 
 
