@@ -8,14 +8,14 @@ console.log(`"Shallow Cloned Array"->`, clone_nums);
 console.log("-------------------------Q-2--------------------------");
 const array_numbers = [20, 3, 4, 56, 90, 400, 49];
 console.log(`"Before Updated Original Array"->`, array_numbers);
-let clone_numbers = { ...array_numbers };
+let clone_numbers = [...array_numbers];
 array_numbers.push(10, 26);
 console.log(`"After Updated Original Array"->`, array_numbers);
 console.log(`"Deep Cloned Array using Spread Operator"->`, clone_numbers);
 console.log("-------------------------Q-3--------------------------");
 array_even = [2, 30, 14, 8];
 console.log(`"array_nums and array_even"->`, array_nums, array_even);
-const all = { ...array_nums, ...array_even };
+const all = [...array_nums, ...array_even];
 console.log(`"Merge or Concat using Spread Operator"->`, all);
 console.log("-------------------------Step-4--------------------------");
 const employee_info = {
