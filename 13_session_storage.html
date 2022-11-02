@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Session Storage</title>
+</head>
+
+<body>
+    <h3> Understanding Session Storage </h3>
+    <script>
+        console.log("Session Storage");
+        window.sessionStorage.setItem("firstName", "Sushant");
+        window.sessionStorage.setItem("lastName", "Sawant");
+        window.sessionStorage.setItem("country", "India");
+        window.sessionStorage.setItem("profession", "React JS Developer");
+        console.log(window.sessionStorage);
+        console.log(window.sessionStorage.length);
+        console.log(window.sessionStorage.getItem("lastName"));
+        console.log(window.sessionStorage.getItem("profession"));
+
+        window.sessionStorage.removeItem("lastName");
+        console.log(window.sessionStorage);
+        //window.sessionStorage.clear();
+        console.log("Session Storage");
+
+
+
+    </script>
+</body>
+
+</html>
