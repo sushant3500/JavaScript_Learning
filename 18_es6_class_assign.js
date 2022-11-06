@@ -33,7 +33,7 @@ for (const element of array_employess) {
 
 console.log("---------------------Q3-> Employess whose name start with `R`-----------------------------------");
 for (const element of array_employess) {
-    if (element.emp_name.startsWith("R", 0)) {
+    if (element.emp_name.startsWith("R")) {
         console.log("Employee Details->", element);
     }
 }
