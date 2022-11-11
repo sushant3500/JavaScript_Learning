@@ -21,11 +21,12 @@ let array_employees = [emp_anil, emp_radha, emp_rishi, emp_sonali, emp_monika, e
 console.log("-------Assignment b]: Sorting Method in ascending and Descending-----------");
 console.log(`----Q-1--> Sort the array_employees in ascending order of Employee Ids----`);
 const newArray1 = array_employees.sort((a, b) => {
-    if (a.emp_id > b.emp_id) {
+    return a.emp_id>b.emp_id? 1 :-1;
+    /*if (a.emp_id > b.emp_id) {
         return 1;
     }
     else
-        return -1;
+        return -1;*/
 });
 newArray1.forEach((value) => {
     console.log(`Employee Id==>"${value.emp_id}" , Name==>"${value.emp_name}" , Department==>"${value.emp_dept}"`);
@@ -60,11 +61,11 @@ newArray2.forEach((value) => {
 console.log(`----Q-4--> Sort the employee array in ascending order of company name ----`);
 
 const newArray4 = array_employees.sort((a, b) => {
-    if (a.emp_company > b.emp_company) {
+    return a.emp_company > b.emp_company? 1 :-1; /*if(a.emp_company > b.emp_company) {
         return 1;
     }
     else
-        return -1;
+        return -1;*/
 });
 newArray4.forEach((value) => {
     console.log(`Company==> "${value.emp_company}", Employee Id==> "${value.emp_id}", Emp Name==> "${value.emp_name}", Employee Salary==> "${value.emp_salary}", Department==> "${value.emp_dept}"`);
